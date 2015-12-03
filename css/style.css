@@ -1,27 +1,27 @@
-/* line 10, ../sass/style.scss */
+/* line 13, ../sass/style.scss */
 .clearfix {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
 section {
   font-size: 0;
 }
 
-/* line 26, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 .top-content {
   margin-bottom: 75px;
 }
-/* line 28, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 .top-content .header-law-title {
   font-family: "Elektra Medium Pro Regular", Arial, sans-serif;
   font-size: 48px;
   line-height: 48px;
   margin: 0 !important;
 }
-/* line 34, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .top-content .header-about-law {
   font-family: "Roboto Light", Arial, sans-serif;
   font-size: 21px;
@@ -30,18 +30,18 @@ section {
   margin-bottom: 25px;
 }
 
-/* line 42, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .header-section-description {
   margin: 0;
   padding: 0;
 }
-/* line 45, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .header-section-description .law-description {
   position: relative;
   padding-left: 115px;
   font-family: "Roboto Regular", Arial, sans-serif;
 }
-/* line 50, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .header-section-description .law-description:after {
   content: "";
   position: absolute;
@@ -51,57 +51,57 @@ section {
   height: 84px;
   background: url(../images/law/FZ134.png) no-repeat;
 }
-/* line 59, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .header-section-description .law-description:last-child:after {
   display: none;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .main-content {
   margin-bottom: 35px;
 }
-/* line 67, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .main-content .main-law-title {
   font-family: "Elektra Medium Pro Regular", Arial, sans-serif;
   font-size: 32px;
   line-height: 42px;
   margin-bottom: 10px;
 }
-/* line 73, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 .main-content .main-about-law {
   font-family: "Roboto Light", Arial, sans-serif;
   margin-top: 0px;
   margin-bottom: 25px;
 }
 
-/* line 79, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .main-section-description {
   margin: 0;
   padding: 0;
 }
-/* line 83, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .main-section-description p {
   font-family: "Roboto Regular", Arial, sans-serif;
   font-size: 15px;
   margin-bottom: 10px;
 }
-/* line 88, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 .main-section-description p:first-child {
   font-weight: bold;
   font-size: 18px;
   font-family: "Roboto Medium", Arial, sans-serif;
 }
-/* line 93, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .main-section-description p:last-child {
   margin-bottom: 30px;
 }
 
-/* line 98, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .footer-section-description {
   margin: 0;
   padding: 0;
 }
-/* line 102, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 .footer-section-description .law-description-footer {
   position: relative;
   font-family: "Roboto Regular", Arial, sans-serif;
@@ -109,13 +109,13 @@ section {
   padding-left: 110px;
   margin-bottom: 0;
 }
-/* line 110, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .footer-section-description .law-description-footer:first-child {
   padding-top: 35px;
   margin-bottom: 20px;
   border-top: 1px solid black;
 }
-/* line 115, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .footer-section-description .law-description-footer:first-child:after {
   content: "";
   position: absolute;
@@ -125,19 +125,19 @@ section {
   height: 60px;
   background: url(../images/law/BlueSymb.png) no-repeat;
 }
-/* line 124, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .footer-section-description .law-description-footer:nth-child(2n) {
   padding-bottom: 35px;
   border-bottom: 1px solid black;
 }
-/* line 128, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 .footer-section-description .law-description-footer:nth-child(3n) {
   padding-top: 35px;
   padding-bottom: 35px;
   margin-bottom: 20px;
   border-bottom: 1px solid black;
 }
-/* line 134, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .footer-section-description .law-description-footer:nth-child(3n):after {
   content: "";
   position: absolute;
@@ -147,7 +147,7 @@ section {
   height: 60px;
   background: url(../images/law/RedSymb.png) no-repeat;
 }
-/* line 144, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .footer-section-description .btn-order {
   float: right;
   width: 23%;
@@ -167,4 +167,202 @@ section {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   border-radius: 15px;
+  opacity: 0.9;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 168, ../sass/style.scss */
+.footer-section-description .btn-order:hover {
+  opacity: 1;
+  background-color: #FF2020;
+}
+
+/* line 176, ../sass/style.scss */
+.modal-block {
+  display: block;
+  position: absolute;
+  width: 550px;
+  height: 380px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+  background-color: #4586c1;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 10px 21px -4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 6px 10px 21px -4px rgba(0, 0, 0, 0.5);
+  box-shadow: 6px 10px 21px -4px rgba(0, 0, 0, 0.5);
+}
+/* line 192, ../sass/style.scss */
+.modal-block .header-modal {
+  width: 440px;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+/* line 202, ../sass/style.scss */
+form {
+  width: 510px;
+  height: 290px;
+  border: 5px solid white;
+  margin-left: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 209, ../sass/style.scss */
+form label {
+  display: block;
+  width: 250px;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  color: white;
+}
+/* line 218, ../sass/style.scss */
+form label:first-child {
+  margin-top: 10px;
+}
+/* line 222, ../sass/style.scss */
+form input {
+  display: block;
+  width: 250px;
+  font-size: 12px;
+  min-height: 30px;
+  padding: 10px 5px 10px 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  outline: none;
+  color: white;
+  background-color: #346898;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 242, ../sass/style.scss */
+form input:hover {
+  opacity: 0.8;
+  border: 2px dotted #346898;
+}
+/* line 246, ../sass/style.scss */
+form input:focus {
+  opacity: 0.6;
+  border: 2px solid #346898;
+}
+/* line 251, ../sass/style.scss */
+form .btn-send {
+  display: block;
+  width: 100px;
+  font-size: 12px;
+  min-height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #FF3838;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+/* line 267, ../sass/style.scss */
+form .btn-send:hover {
+  border: none;
+  opacity: 0.9;
+  background-color: #FF2020;
+  transform: scale(1.15, 1.15);
+}
+
+/* line 276, ../sass/style.scss */
+.modal-block-success {
+  display: none;
+  position: absolute;
+  top: 35%;
+  left: 23%;
+  margin: 0;
+  padding: 0;
+  width: 306px;
+  height: 120px;
+  border: 3px solid #FF3838;
+  background-color: #346898;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 289, ../sass/style.scss */
+.modal-block-success p {
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: white;
+}
+/* line 297, ../sass/style.scss */
+.modal-block-success a {
+  display: block;
+  width: 100px;
+  min-height: 35px;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #FF3838;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+/* line 315, ../sass/style.scss */
+.modal-block-success a:hover {
+  opacity: 0.9;
+  background-color: #FF2020;
+  text-decoration: none;
+  transform: scale(1.15, 1.15);
+}
+
+/* line 324, ../sass/style.scss */
+.hide {
+  display: none;
+}
+
+/* line 327, ../sass/style.scss */
+.show {
+  display: block;
 }

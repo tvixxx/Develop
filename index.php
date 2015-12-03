@@ -343,9 +343,32 @@
                         <a class="btn-order">Заказать ЭО</a>
                     </section>
                 <!-- //Footer Section -->
+
+                <!-- Modal -->
+                <section class="modal-block col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                    <h4 class="header-modal">Оставьте свои данные для заказа ОЭ</h4>
+                    <form class="login-form" action="/echo" method="post">
+                        <label for="name-id">Ваше имя:</label>
+                        <input type="text" name="name" id="name-id">
+
+                        <label for="last-name-id">Ваша фамилия:</label>
+                        <input type="text" name="last-name" id="last-name-id">
+
+                        <label for="phone-id">Ваш сотовый телефон:</label>
+                        <input type="tel" name="phone" id="phone-id">
+                        
+                        <input class="btn-send" type="submit">Отправить</button>
+
+                        <section class="modal-block-success">
+                            <p>Спасибо, мы свяжемся с вами как только сможем!</p>
+                            <a class="btn close-modal-btn" href="#">выйти</a>
+                        </section>
+                    </form>
+                </section>
+                <!-- //Modal -->
             </article>
             <!-- //Main Article -->
-
+            
 
         </section>
     
@@ -514,8 +537,9 @@
 
 
 
-
-
+    <!-- My Modal.js Script -->
+    <script src="js/Modal.js"></script>
+    <!-- My Modal.js Script -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery-css-transform.min.js"></script>
     <script src="js/jquery-animate-css-rotate-scale.min.js"></script>

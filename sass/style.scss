@@ -1,11 +1,14 @@
 // Color
 $first_block_color: #d2dd99;
 $button_order_color: #FF3838;
+$button_order_color_hover: #FF2020;
 // Font-size
 
 // Width
 $first_block_width: 40%;
 
+$modal_color_bg: #4586c1;
+$modal_input_color_bg: #346898;
 
 .clearfix {
 	content: "";
@@ -156,6 +159,171 @@ section {
 		color: white;
 		background-color: $button_order_color;
 		@include border-radius(15px);
+		opacity: 0.9;
+		cursor: pointer;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			opacity: 1;
+			background-color: $button_order_color_hover;
+		}
 	}
 }
 
+// Modal windows
+.modal-block {
+	display: block;
+	position: absolute;
+	width: 550px;
+	height: 380px;
+	display: block;
+	margin: 0;
+	padding: 0;
+	z-index: 5;
+	background-color: $modal_color_bg;
+
+	@include border-radius(10px);
+	-webkit-box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
+	-moz-box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
+	box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
+
+	.header-modal {
+		width: 440px;
+		font-size: 24px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		color: white;
+	}
+}
+form {
+	width: 510px;
+	height: 290px;
+	border: 5px solid white;
+	margin-left: 20px;
+	@include border-radius(10px);
+	
+	label {
+		display: block;
+		width: 250px;
+		font-size: 16px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+		color: white;
+
+		&:first-child {
+			margin-top: 10px;
+		}
+	}
+	input {
+		display: block;
+		width: 250px;
+		font-size: 12px;
+		min-height: 30px;
+		padding: 10px 5px 10px 5px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+		border: 2px solid white;
+		outline: none;
+		color: white;
+		background-color: $modal_input_color_bg;
+		@include border-radius(10px);
+		opacity: 0.8;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+
+
+		&:hover {
+			opacity: 0.8;
+			border: 2px dotted $modal_input_color_bg;
+		}
+		&:focus {
+			opacity: 0.6;
+			border: 2px solid $modal_input_color_bg;
+		}
+	}
+	.btn-send { 
+		display: block;
+		width: 100px;
+		font-size: 12px;
+		min-height: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		@include border-radius(10px);
+		border: none;
+		outline: none;
+		color: white;
+		background-color: $button_order_color;
+		-webkit-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+
+		&:hover {
+			border:none;
+			opacity: 0.9;
+			background-color: $button_order_color_hover;
+			transform: scale(1.15, 1.15);
+		}
+
+	}
+}
+.modal-block-success {
+	display: none;
+	position: absolute;
+	top: 35%;
+	left: 23%;
+	margin: 0;
+	padding: 0;
+	width: 306px;
+	height: 120px;
+	border: 3px solid  $button_order_color;
+	background-color: $modal_input_color_bg;
+	@include border-radius(10px);
+
+	p {
+		padding-top: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 20px;
+		font-size: 12px;
+		color: white;
+	}
+	a {
+		display: block;
+		width: 100px;
+		min-height: 35px;
+		padding: 5px 5px 5px 5px;
+		text-align: center;
+		font-size: 16px;
+		margin-left: auto;
+		margin-right: auto;
+		@include border-radius(10px);
+		border: none;
+		outline: none;
+		color: white;
+		background-color: $button_order_color;
+		-webkit-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+
+		&:hover {
+			opacity: 0.9;
+			background-color: $button_order_color_hover;
+			text-decoration: none;
+			transform: scale(1.15, 1.15);
+		}
+	}
+}
+
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
