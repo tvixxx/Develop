@@ -1,0 +1,170 @@
+/* line 10, ../sass/style.scss */
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 15, ../sass/style.scss */
+section {
+  font-size: 0;
+}
+
+/* line 26, ../sass/style.scss */
+.top-content {
+  margin-bottom: 75px;
+}
+/* line 28, ../sass/style.scss */
+.top-content .header-law-title {
+  font-family: "Elektra Medium Pro Regular", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  margin: 0 !important;
+}
+/* line 34, ../sass/style.scss */
+.top-content .header-about-law {
+  font-family: "Roboto Light", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 24px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+/* line 42, ../sass/style.scss */
+.header-section-description {
+  margin: 0;
+  padding: 0;
+}
+/* line 45, ../sass/style.scss */
+.header-section-description .law-description {
+  position: relative;
+  padding-left: 115px;
+  font-family: "Roboto Regular", Arial, sans-serif;
+}
+/* line 50, ../sass/style.scss */
+.header-section-description .law-description:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 82px;
+  height: 84px;
+  background: url(../images/law/FZ134.png) no-repeat;
+}
+/* line 59, ../sass/style.scss */
+.header-section-description .law-description:last-child:after {
+  display: none;
+}
+
+/* line 64, ../sass/style.scss */
+.main-content {
+  margin-bottom: 35px;
+}
+/* line 67, ../sass/style.scss */
+.main-content .main-law-title {
+  font-family: "Elektra Medium Pro Regular", Arial, sans-serif;
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 10px;
+}
+/* line 73, ../sass/style.scss */
+.main-content .main-about-law {
+  font-family: "Roboto Light", Arial, sans-serif;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+/* line 79, ../sass/style.scss */
+.main-section-description {
+  margin: 0;
+  padding: 0;
+}
+/* line 83, ../sass/style.scss */
+.main-section-description p {
+  font-family: "Roboto Regular", Arial, sans-serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+/* line 88, ../sass/style.scss */
+.main-section-description p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Roboto Medium", Arial, sans-serif;
+}
+/* line 93, ../sass/style.scss */
+.main-section-description p:last-child {
+  margin-bottom: 30px;
+}
+
+/* line 98, ../sass/style.scss */
+.footer-section-description {
+  margin: 0;
+  padding: 0;
+}
+/* line 102, ../sass/style.scss */
+.footer-section-description .law-description-footer {
+  position: relative;
+  font-family: "Roboto Regular", Arial, sans-serif;
+  font-size: 15px;
+  padding-left: 110px;
+  margin-bottom: 0;
+}
+/* line 110, ../sass/style.scss */
+.footer-section-description .law-description-footer:first-child {
+  padding-top: 35px;
+  margin-bottom: 20px;
+  border-top: 1px solid black;
+}
+/* line 115, ../sass/style.scss */
+.footer-section-description .law-description-footer:first-child:after {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 15px;
+  width: 64px;
+  height: 60px;
+  background: url(../images/law/BlueSymb.png) no-repeat;
+}
+/* line 124, ../sass/style.scss */
+.footer-section-description .law-description-footer:nth-child(2n) {
+  padding-bottom: 35px;
+  border-bottom: 1px solid black;
+}
+/* line 128, ../sass/style.scss */
+.footer-section-description .law-description-footer:nth-child(3n) {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+/* line 134, ../sass/style.scss */
+.footer-section-description .law-description-footer:nth-child(3n):after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 15px;
+  width: 67px;
+  height: 60px;
+  background: url(../images/law/RedSymb.png) no-repeat;
+}
+/* line 144, ../sass/style.scss */
+.footer-section-description .btn-order {
+  float: right;
+  width: 23%;
+  min-height: 20px;
+  padding: 10px 30px 10px 35px;
+  font-family: "Elektra Text Pro", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  background-color: #FF3838;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}

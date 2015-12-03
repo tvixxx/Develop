@@ -1,0 +1,161 @@
+// Color
+$first_block_color: #d2dd99;
+$button_order_color: #FF3838;
+// Font-size
+
+// Width
+$first_block_width: 40%;
+
+
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+section {
+	font-size: 0;
+}
+@mixin border-radius($box_border_radius) {
+	-webkit-border-radius: $box_border_radius;
+	-moz-border-radius: $box_border_radius;
+	-ms-border-radius: $box_border_radius;
+	-o-border-radius: $box_border_radius;
+	border-radius: $box_border_radius;
+}
+//  First block with text
+.top-content {
+	margin-bottom: 75px;
+	.header-law-title {
+		font-family: "Elektra Medium Pro Regular", Arial, sans-serif;
+		font-size: 48px;
+		line-height: 48px;
+		margin: 0 !important;
+		}
+		.header-about-law {
+		font-family: "Roboto Light", Arial, sans-serif;
+		font-size: 21px;
+		line-height: 24px;
+		margin-top: 5px;
+		margin-bottom: 25px;
+		}	
+	}
+	.header-section-description {
+		margin: 0;
+		padding: 0;
+		.law-description {
+			position: relative;
+			padding-left: 115px;
+			font-family: "Roboto Regular", Arial, sans-serif;
+			
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 82px;
+				height: 84px;
+				background:  url(../images/law/FZ134.png) no-repeat;
+			}
+			&:last-child:after {
+				display: none;
+			}
+		}
+	}
+.main-content {
+	margin-bottom: 35px;
+
+	.main-law-title {
+		font-family: "Elektra Medium Pro Regular", Arial, sans-serif;
+		font-size: 32px;
+		line-height: 42px;
+		margin-bottom: 10px;
+	}
+	.main-about-law {
+		font-family: "Roboto Light", Arial, sans-serif;
+		margin-top: 0px;
+		margin-bottom: 25px;
+	}
+}
+.main-section-description {
+	margin: 0;
+	padding: 0;
+
+	p {
+		font-family: "Roboto Regular", Arial, sans-serif;
+		font-size: 15px;
+		margin-bottom: 10px;
+
+		&:first-child {
+			font-weight: bold;
+			font-size: 18px;
+			font-family: "Roboto Medium", Arial, sans-serif;
+		}
+		&:last-child {
+			margin-bottom: 30px;
+		}
+	}
+}
+.footer-section-description {
+	margin: 0;
+	padding: 0;
+
+	.law-description-footer {
+		position: relative;
+		font-family: "Roboto Regular", Arial, sans-serif;
+		font-size: 15px;
+		padding-left: 110px;
+		margin-bottom: 0;
+		
+
+		&:first-child {
+			padding-top: 35px;
+			margin-bottom: 20px;
+			border-top: 1px solid black; 
+		}
+		&:first-child:after {
+			content: "";
+			position: absolute;
+			top: 90px;
+			left: 15px;
+			width: 64px;
+			height: 60px;
+			background: url(../images/law/BlueSymb.png) no-repeat;
+		}
+		&:nth-child(2n) {
+			padding-bottom: 35px;
+			border-bottom: 1px solid black;
+		}
+		&:nth-child(3n) {
+			padding-top: 35px;
+			padding-bottom: 35px;
+			margin-bottom: 20px;
+			border-bottom: 1px solid black;
+		}
+		&:nth-child(3n):after {
+			content: "";
+			position: absolute;
+			top: 35px;
+			left: 15px;
+			width: 67px;
+			height: 60px;
+			background: url(../images/law/RedSymb.png) no-repeat;
+		}
+	}
+	.btn-order {
+		float: right;
+		width: 23%;
+		min-height: 20px;
+		padding: 10px 30px 10px 35px;
+		font-family: "Elektra Text Pro", Arial, sans-serif;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		border: none;
+		outline: none;
+		text-decoration: none;
+		color: white;
+		background-color: $button_order_color;
+		@include border-radius(15px);
+	}
+}
+
