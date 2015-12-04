@@ -348,7 +348,7 @@
                 <section class="modal-block col-lg-9 col-md-9 col-sm-12 col-xs-12">
                     <div class="close-modal-block"></div>
                     <h4 class="header-modal">Оставьте свои данные для заказа ОЭ</h4>
-                    <form class="login-form" action="/echo" method="post">
+                    <form id="form-reset-login" class="login-form" action="/echo" method="post">
                         <label for="name-id">Ваше имя:</label>
                         <input type="text" name="name" id="name-id">
 
