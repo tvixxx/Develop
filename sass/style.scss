@@ -15,9 +15,12 @@ $modal_input_color_bg: #346898;
 	display: table;
 	clear: both;
 }
+
 section {
 	font-size: 0;
 }
+
+// Mixins
 @mixin border-radius($box_border_radius) {
 	-webkit-border-radius: $box_border_radius;
 	-moz-border-radius: $box_border_radius;
@@ -25,7 +28,10 @@ section {
 	-o-border-radius: $box_border_radius;
 	border-radius: $box_border_radius;
 }
+
+
 //  First block with text
+// Header-content
 .top-content {
 	margin-bottom: 75px;
 	.header-law-title {
@@ -64,6 +70,8 @@ section {
 			}
 		}
 	}
+
+// body-content
 .main-content {
 	margin-bottom: 35px;
 
@@ -98,6 +106,8 @@ section {
 		}
 	}
 }
+
+//footer
 .footer-section-description {
 	margin: 0;
 	padding: 0;
@@ -173,11 +183,15 @@ section {
 }
 
 // Modal windows
+// Main block
 .modal-block {
+	$modal_popup_width: 550px;
+	$modal_popup_height: 380px;
+
 	display: block;
 	position: absolute;
-	width: 550px;
-	height: 380px;
+	width: $modal_popup_width;
+	height: $modal_popup_height;
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -273,6 +287,8 @@ form {
 
 	}
 }
+
+//Success window
 .modal-block-success {
 	display: none;
 	position: absolute;
@@ -321,9 +337,29 @@ form {
 	}
 }
 
+// layers show and disapear
 .hide {
 	display: none;
 }
 .show {
 	display: block;
+	//animation
+	-webkit-animation: bounce .6s;
+	        animation: bounce .6s;
+}
+
+// Animation
+@-webkit-keyframes bounce {
+	0% { -webkit-transform: translateY(-2000px); transform: translateY(-2000px);}
+	70% { -webkit-transform: translateY(30px); transform: translateY(30px);}
+	90% { -webkit-transform: translateY(-10px); transform: translateY(-10px);}
+	100% { -webkit-transform: translateY(0); transform: translateY(0);}
+	
+}
+@keyframes bounce {
+	0% { -webkit-transform: translateY(-2000px); transform: translateY(-2000px);}
+	70% { -webkit-transform: translateY(30px); transform: translateY(30px);}
+	90% { -webkit-transform: translateY(-10px); transform: translateY(-10px);}
+	100% { -webkit-transform: translateY(0); transform: translateY(0);}
+	
 }
