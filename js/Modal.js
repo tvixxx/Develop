@@ -16,6 +16,8 @@ close.addEventListener("click", function(event){
 modalPopup.classList.add("hide");
 modalSuccess.classList.add("hide");
 
+var formReset = document.getElementById("form-reset-login");
+
 
 butLink.addEventListener("click", function(event){
 	event.preventDefault();
