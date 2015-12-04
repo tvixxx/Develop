@@ -10,16 +10,24 @@ modalSuccess.classList.add("hide");
 
 butLink.addEventListener("click", function(event){
 	event.preventDefault();
-	modalPopup.classList.add("show");
+		modalPopup.classList.add("show");
 });
 
 butSend.addEventListener("click", function(event){
 	event.preventDefault();
-	modalSuccess.classList.add("show");
+		modalSuccess.classList.add("show");
 });
 
 butClose.addEventListener("click", function(event){
 	event.preventDefault();
-	modalSuccess.classList.remove("show");
-	modalPopup.classList.remove("show");
+		modalSuccess.classList.remove("show");
+		modalPopup.classList.remove("show");
+});
+
+window.addEventListener("keydown", function(event){
+	if (event.keyCode == 27) {
+		if (modalPopup.classList.contains("show")) {
+			modalPopup.classList.remove("show");
+		}
+	}
 });
