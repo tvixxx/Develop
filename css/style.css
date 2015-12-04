@@ -213,7 +213,7 @@ section {
 }
 
 /* line 218, ../sass/style.scss */
-form {
+.login-form {
   width: 510px;
   height: 290px;
   border: 5px solid white;
@@ -225,7 +225,7 @@ form {
   border-radius: 10px;
 }
 /* line 225, ../sass/style.scss */
-form label {
+.login-form label {
   display: block;
   width: 250px;
   font-size: 16px;
@@ -235,11 +235,11 @@ form label {
   color: white;
 }
 /* line 234, ../sass/style.scss */
-form label:first-child {
+.login-form label:first-child {
   margin-top: 10px;
 }
 /* line 238, ../sass/style.scss */
-form input {
+.login-form input {
   display: block;
   width: 250px;
   font-size: 12px;
@@ -263,17 +263,17 @@ form input {
   transition: all 0.3s ease-in-out;
 }
 /* line 258, ../sass/style.scss */
-form input:hover {
+.login-form input:hover {
   opacity: 0.8;
   border: 2px dotted #346898;
 }
 /* line 262, ../sass/style.scss */
-form input:focus {
+.login-form input:focus {
   opacity: 0.6;
   border: 2px solid #346898;
 }
 /* line 267, ../sass/style.scss */
-form .btn-send {
+.login-form .btn-send {
   display: block;
   width: 100px;
   font-size: 12px;
@@ -294,7 +294,7 @@ form .btn-send {
   transition: all 0.4s ease-in-out;
 }
 /* line 283, ../sass/style.scss */
-form .btn-send:hover {
+.login-form .btn-send:hover {
   border: none;
   opacity: 0.9;
   background-color: #FF2020;
