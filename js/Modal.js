@@ -5,8 +5,18 @@ var butSend = modalPopup.querySelector(".btn-send");
 var modalSuccess = document.querySelector(".modal-block-success");
 var butClose = modalSuccess.querySelector(".close-modal-btn");
 
+var close = document.querySelector(".close-modal-block");
+close.addEventListener("click", function(event){
+	event.preventDefault();
+		modalPopup.classList.remove("show");
+		modalPopup.classList.add("hide");
+});
+
+
 modalPopup.classList.add("hide");
 modalSuccess.classList.add("hide");
+
+
 
 butLink.addEventListener("click", function(event){
 	event.preventDefault();

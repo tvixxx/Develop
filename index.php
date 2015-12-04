@@ -346,6 +346,7 @@
 
                 <!-- Modal -->
                 <section class="modal-block col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                    <div class="close-modal-block"></div>
                     <h4 class="header-modal">Оставьте свои данные для заказа ОЭ</h4>
                     <form class="login-form" action="/echo" method="post">
                         <label for="name-id">Ваше имя:</label>
@@ -357,7 +358,7 @@
                         <label for="phone-id">Ваш сотовый телефон:</label>
                         <input type="tel" name="phone" id="phone-id">
                         
-                        <input class="btn-send" type="submit">Отправить</button>
+                        <input class="btn-send" type="submit">Отправить</input>
 
                         <section class="modal-block-success">
                             <p>Спасибо, мы свяжемся с вами как только сможем!</p>

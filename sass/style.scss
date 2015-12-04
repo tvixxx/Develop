@@ -205,6 +205,17 @@ section {
 	-moz-box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
 	box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
 
+	.close-modal-block {
+		content: "";
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		width: 23px;
+		height: 23px;
+		background: url(../images/icon-cross-x.png) no-repeat;
+		cursor: pointer;
+	}
+
 	.header-modal {
 		width: 440px;
 		font-size: 24px;
