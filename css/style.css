@@ -182,10 +182,12 @@ section {
 /* line 187, ../sass/style.scss */
 .modal-block {
   display: block;
-  position: absolute;
+  position: fixed;
   width: 550px;
   height: 380px;
   display: block;
+  top: 40%;
+  left: 35%;
   margin: 0;
   padding: 0;
   z-index: 5;
@@ -199,7 +201,7 @@ section {
   -moz-box-shadow: 6px 10px 21px -4px rgba(0, 0, 0, 0.5);
   box-shadow: 6px 10px 21px -4px rgba(0, 0, 0, 0.5);
 }
-/* line 206, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .modal-block .header-modal {
   width: 440px;
   font-size: 24px;
@@ -210,7 +212,7 @@ section {
   color: white;
 }
 
-/* line 216, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 form {
   width: 510px;
   height: 290px;
@@ -222,7 +224,7 @@ form {
   -o-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 223, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 form label {
   display: block;
   width: 250px;
@@ -232,11 +234,11 @@ form label {
   margin-bottom: 0;
   color: white;
 }
-/* line 232, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 form label:first-child {
   margin-top: 10px;
 }
-/* line 236, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 form input {
   display: block;
   width: 250px;
@@ -260,17 +262,17 @@ form input {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 256, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 form input:hover {
   opacity: 0.8;
   border: 2px dotted #346898;
 }
-/* line 260, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 form input:focus {
   opacity: 0.6;
   border: 2px solid #346898;
 }
-/* line 265, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 form .btn-send {
   display: block;
   width: 100px;
@@ -291,7 +293,7 @@ form .btn-send {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 281, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 form .btn-send:hover {
   border: none;
   opacity: 0.9;
@@ -299,12 +301,12 @@ form .btn-send:hover {
   transform: scale(1.15, 1.15);
 }
 
-/* line 292, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 .modal-block-success {
   display: none;
-  position: absolute;
-  top: 35%;
-  left: 23%;
+  position: fixed;
+  top: 56%;
+  left: 41%;
   margin: 0;
   padding: 0;
   width: 306px;
@@ -317,7 +319,7 @@ form .btn-send:hover {
   -o-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 305, ../sass/style.scss */
+/* line 307, ../sass/style.scss */
 .modal-block-success p {
   padding-top: 30px;
   padding-left: 10px;
@@ -326,7 +328,7 @@ form .btn-send:hover {
   font-size: 12px;
   color: white;
 }
-/* line 313, ../sass/style.scss */
+/* line 315, ../sass/style.scss */
 .modal-block-success a {
   display: block;
   width: 100px;
@@ -349,7 +351,7 @@ form .btn-send:hover {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 331, ../sass/style.scss */
+/* line 333, ../sass/style.scss */
 .modal-block-success a:hover {
   opacity: 0.9;
   background-color: #FF2020;
@@ -357,12 +359,12 @@ form .btn-send:hover {
   transform: scale(1.15, 1.15);
 }
 
-/* line 341, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .hide {
   display: none;
 }
 
-/* line 344, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 .show {
   display: block;
   -webkit-animation: bounce .6s;

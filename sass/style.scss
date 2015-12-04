@@ -189,10 +189,12 @@ section {
 	$modal_popup_height: 380px;
 
 	display: block;
-	position: absolute;
+	position: fixed;
 	width: $modal_popup_width;
 	height: $modal_popup_height;
 	display: block;
+	top: 40%;
+	left: 35%;
 	margin: 0;
 	padding: 0;
 	z-index: 5;
@@ -291,9 +293,9 @@ form {
 //Success window
 .modal-block-success {
 	display: none;
-	position: absolute;
-	top: 35%;
-	left: 23%;
+	position: fixed;
+	top: 56%;
+	left: 41%;
 	margin: 0;
 	padding: 0;
 	width: 306px;
